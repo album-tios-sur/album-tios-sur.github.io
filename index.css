@@ -1,0 +1,521 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("cielo-vertical.jpg");
+    background-size: cover;
+    filter: sepia(30%); /* Aplica el filtro sepia al fondo */
+    z-index: -1; /* Asegura que el fondo esté detrás de todo el contenido */
+}
+
+
+
+.album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/*
+##### SECCIÓN 1 #####
+*/
+
+.seccion-1 {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* O ajusta la altura según sea necesario */
+}
+
+.titulo {
+    text-align: center;
+    font-family: "Dancing Script", sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+.descripcion {
+    font-family: "Averia Serif Libre", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.foto-1{
+    background-color:white;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    margin: 10px 20px 10px 30px;
+    transform: rotate(-6deg);
+}
+
+.foto-2 {
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    margin: 10px 30px 10px 20px;
+    transform: rotate(3deg);
+}
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 950px) {
+    .seccion-1 {
+        flex-direction: column; /* Cambia el diseño a columna */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .contenido {
+        margin-bottom: 20px; /* Ajusta el espacio entre el contenido y las imágenes */
+        order: 1; /* Cambia el orden del elemento */
+    }
+
+    .foto-1 {
+        order: 2; /* Cambia el orden del elemento */
+        width: 70vw; /* Ancho relativo al ancho de la ventana */
+        max-width: 300px;
+    }
+
+    .foto-2 {
+        order: 3; /* Cambia el orden del elemento */
+        width: 70vw; /* Ancho relativo al ancho de la ventana */
+        max-width: 300px;
+    }
+
+    
+}
+
+/*
+##### SECCIÓN 2 #####
+*/
+.seccion-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 300px;
+    flex-wrap: wrap;
+  }
+  
+.foto-3 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 300px;
+    transform: rotate(2deg);
+}
+
+.fotos-s2 {
+    margin: auto;
+    display: grid;
+}
+
+.foto-4 {
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 320px;
+    transform: rotate(1deg);
+}
+
+.foto-5 {
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(-2deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 310px;
+}
+
+/*
+##### SECCIÓN 3 #####
+*/
+
+.seccion-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    min-width: 300px;
+    flex-wrap: wrap;
+  }
+  
+
+.fotos1-s3 {
+    margin: auto;
+    display: grid;
+    min-width: 300px;
+    flex-wrap: wrap;
+}
+
+.foto-6 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(1deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 340px;
+}
+
+.foto-7 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(-2deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 160px;
+}
+
+.fotos2-s3 {
+    margin: auto;
+    display: grid;
+    min-width: 300px;
+    flex-wrap: wrap;
+}
+
+.foto-8 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(-1deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 160px;
+}
+
+.foto-9 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(3deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 355px;
+}
+
+/*
+##### SECCIÓN 4 #####
+*/
+
+.seccion-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .foto-10 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(3deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 555px;
+}
+
+/*
+##### SECCIÓN 5 #####
+*/
+
+.seccion-5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+    min-width: 300px;
+    flex-wrap: wrap;
+  }
+  
+
+.fotos1-s5 {
+    margin: auto;
+    display: grid;
+    min-width: 300px;
+    flex-wrap: wrap;
+}
+
+.foto-11 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(1deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 340px;
+}
+
+.foto-12 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(-2deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 345px;
+    
+}
+
+.fotos2-s5 {
+    margin: auto;
+    display: grid;
+    min-width: 300px;
+    flex-wrap: wrap;
+}
+
+.foto-13 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(-1deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 350px;
+}
+
+.foto-14 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(3deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 160px;
+}
+
+/*
+##### SECCIÓN 6 #####
+*/
+
+.seccion-6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+    min-width: 300px;
+    flex-wrap: wrap;
+  }
+  
+
+.fotos1-s6 {
+    margin: auto;
+    display: grid;
+    min-width: 300px;
+    flex-wrap: wrap;
+}
+
+.foto-15 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(1deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 340px;
+}
+
+.foto-16 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(-2deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 345px;
+}
+
+.fotos2-s6 {
+    margin: auto;
+    display: grid;
+    min-width: 300px;
+    flex-wrap: wrap;
+}
+
+.foto-17 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(-1deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 160px;
+}
+
+.foto-18 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(3deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 350px;
+}
+
+
+/*
+##### SECCIÓN 7 #####
+*/
+
+.seccion-7 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+    min-width: 300px;
+    flex-wrap: wrap;
+  }
+
+.foto-19 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(1deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 340px;
+}
+
+.foto-20 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(-2deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 345px;
+}
+
+
+
+/*
+##### SECCIÓN 8 #####
+*/
+
+.seccion-8 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .foto-21 {
+    margin: auto;
+    padding:10px 10px 50px 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('papel-desgastado.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px; /* Espacio entre las fotos 4 y 5 */
+    transform: rotate(3deg);
+    width: 80vw; /* Ancho relativo al ancho de la ventana */
+    max-width: 555px;
+}
