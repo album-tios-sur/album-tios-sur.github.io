@@ -125,14 +125,10 @@ body::before {
     margin-bottom: 30px;
 }
 
-.foto-6 {
-    transform: rotate(1deg);
-    max-width: 340px;
-}
 
 .foto-7 {
     transform: rotate(-2deg);
-    max-width: 160px;
+    max-width: 340px;
 }
 
 .foto-8 {
@@ -145,14 +141,6 @@ body::before {
     max-width: 355px;
 }
 
-/*
-##### SECCIÓN 4 #####
-*/
-  
-.foto-10 {
-    transform: rotate(3deg);
-    max-width: 555px;
-}
 
 /*
 ##### SECCIÓN 5 #####
@@ -347,7 +335,7 @@ body::before {
     flex-wrap: wrap;
 }
 
-.foto-3, .foto-4, .foto-5, .foto-6,
+.foto-3, .foto-4, .foto-5,
 .foto-7, .foto-8, .foto-9, .foto-10, .foto-11, .foto-12,
 .foto-13, .foto-14, .foto-15, .foto-16, .foto-17, .foto-18,
 .foto-19, .foto-20, .foto-21, .foto-22, .foto-23, .foto-24,
@@ -372,7 +360,7 @@ body::before {
     flex-wrap: wrap;
 }
 
-.seccion-2, .seccion-3, .seccion-4, 
+.seccion-2, .seccion-3, 
 .seccion-5, .seccion-6, .seccion-7, .seccion-8,
 .seccion-9, .seccion-10, .seccion-11, .seccion-12 {
     display: flex;
